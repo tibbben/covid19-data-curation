@@ -1,0 +1,1029 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="common/css/reveal.css">
+  <link rel="stylesheet" href="common/css/white.css">
+  <link rel="stylesheet" href="common/css/overrides.css">
+  <script src="common/java/print.js"></script>
+  <title>XSAT - UM COVID-19 Rapid Response Grant</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+    
+      <!-- ***
+            * Title Slide Branded
+            * -->
+      <section data-transition="fade" data-background-image="common/assets/img/titlePage.png">
+        <div style="position: absolute; top: 0px; left: 0px;">
+          <div style="color: white; margin-top: 100px; text-align: left; margin-left: 340px; margin-bottom: 23px;" class="fragment fade-out" data-fragment-index=1><strong>&nbsp;&nbsp;X<br>&nbsp;&nbsp;&nbsp;S<br>&nbsp;&nbsp;&nbsp;&nbsp;A<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T</strong></div>
+          <div style="color: black; margin-top: 23px; margin-left: 340px; text-align: left;"><strong>UM COVID-19 Rapid Response Grant</strong></div>
+          <div style="color: white; margin-left: 340px; margin-top: 200px; font-size: 60%;">
+            <div style="text-align: left; float: left;">Timothy B Norris, PhD - <a href="mailto:tnorris@miami.edu" style="color: #fff; text-decoration: underline;">tnorris@miami.edu</a><br>University of Miami Libraries - August 12 2019</div>
+            <div style="text-align: right; float: right; margin-left: 70px;"><a href="https://bit.ly/2PzZZCt"  style="color: #fff; text-decoration: underline;">https://bit.ly/2PzZZCt</a><br><a href="https://github.com/tibbben/data-science"  style="color: #fff; text-decoration: underline;">https://github.com/tibbben/uml-xsat</a></div>
+          </div>
+        </div>
+        <div style="position: absolute; top: 0px; left: 0px;" class="fragment" data-fragment-index=1>
+          <div style="color: white; margin-top: 100px; text-align: left; margin-left: 340px; margin-bottom: 23px;" class="fragment fade-in" data-fragment-index=1><strong>eXperimental<br>&nbsp;&nbsp;&nbsp;Situational<br>&nbsp;&nbsp;&nbsp;&nbsp;Awareness<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tool</strong></div>
+          <div style="color: black; margin-top: 23px; margin-left: 340px; text-align: left;"><strong>UM COVID-19 Rapid Response Grant</strong></div>
+          <div style="color: white; margin-left: 340px; margin-top: 200px; font-size: 60%;">
+            <div style="text-align: left; float: left;">Timothy B Norris, PhD - <a href="mailto:tnorris@miami.edu" style="color: #fff; text-decoration: underline;">tnorris@miami.edu</a><br>University of Miami Libraries - August 12 2019</div>
+            <div style="text-align: right; float: right; margin-left: 70px;"><a href="https://bit.ly/2PzZZCt"  style="color: #fff; text-decoration: underline;">https://bit.ly/2PzZZCt</a><br><a href="https://github.com/tibbben/data-science"  style="color: #fff; text-decoration: underline;">https://github.com/tibbben/uml-xsat</a></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***
+            * PPC Dade County
+            * -->
+      <section data-transition="fade">
+        <img src="common/assets/img/PPC_dade_simple.jpg" style="max-width: 1100px; margin-top: -100px;">
+      </section>
+
+      <!-- ***
+            * PPC Dade County Complete
+            * -->
+      <section data-transition="fade">
+        <img src="common/assets/img/PPC_dade_complete.jpg" style="max-width: 1100px; margin-top: -100px;"> 
+        <div class="um-template-citation" style="margin-top: -60px !important;">
+          <ul style="list-style: none;">
+            <li>Williams, R., Odum, G., Bursac, Z., Trepka, M.J., Veledar, E., Saxena A., Gidel, L.T, & Norris, T.B. (2020). <i>MDC COVID-19 Projections</i>, <a href="https://rwilli5.github.io/MiamiCovidProject/" target="_blank">https://rwilli5.github.io/MiamiCovidProject/</a>  Last Accessed 08/10/2020</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ***
+            * Outline
+            * -->
+      <section data-transition="fade">
+        <div style="position: absolute; left: -400px; top: -200px;">
+          <img src="common/assets/img/SARS-CoV-2_without_background.png" style="max-width: 900px;">
+        </div>
+        <div style="margin-left: 700px !important; margin-top: 150px; font-size: 80%; text-align: left;">
+          <div class="um-template-title" style="text-align: left !important;">Tracking the Coronavirus</div>
+          <div style="margin-bottom: 200px; font-size: 90%; margin-left: 23px;">
+            <ul>
+                <li><i>Scope and Purpose</i></li>
+                <li><i>Data Sources</i></li>
+                <li><i>Data Curation</i></li>
+                <li><i>Stories To Tell</i></li>
+                <li><i>Application and Ways Forward</i></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="um-template-citation" style="max-width: 55%;">SARS-CoV-2_without_background.png (2020). Centers for Disease Control and Prevention's Public Health Image Library (PHIL), identification number #23312. Wikimedia Commons.
+        </div>
+      </section>
+
+      <!-- ***
+            * Grant Scope and Purpose
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Scope and Purpose</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter">
+
+            <div class="um-template-content">
+              <div class="um-template-title" style="margin-bottom: 72px !important;">The IDSC Rapid Response Grant<br><span style="font-weight: 500; font-size: 90%;">PI: Nicholas Tsinoremas, PhD</span></div>
+              <div class="um-template-element">
+                <div style="display: inline-block; font-size: 85%; text-align: left;">
+                  <div style="float: left; margin-top: 17px;">- Social Media, NLP and AI<br>- Geospatial Visualization<br>- Mobile App for Self Reporting</div>
+                  <span class="fragment">
+                  <div style="float: left; font-size: 550%; margin: 55px 42px 0 42px; font-family: courier new">}</div>
+                  <div style="float: right; margin-top: 17px; font-size: 90%">Tools, knowledge and experience<br>that can be applied to other<br>infectious disease vectors; e.g. the flu.</div>
+                  </span>
+                </div>
+                <div class="fragment" style="display: inline-block; font-size: 85%; font-weight: bold; text-align: left; margin-top: 42px; margin-left: -220px;">
+                  <div style="float: left; margin-right: 23px"><span style="margin-left: 200px; font-size: 200%;">/</span><br><br>Social Media and Mobile App<br><span style="font-weight: 500; font-size: 90%;">CCS and Advanced Computing<br>(Joel Zysman)</span></div>
+                  <div style="float: right; margin-left: 83px"><span style="margin-left: -40px; font-size: 200%;">\</span><br><br>Geospatial Visualization (XSAT)<br><span style="font-weight: 500; font-size: 90%;">SWENG and Development Group<br>(Chris Mader and Tim Norris)</span></div>
+                </div> 
+              </div>
+            </div>
+
+          </div>
+          
+          <!-- <script>displayFooter(this);</script> -->
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * XSAT Scope
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Scope and Purpose</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter">
+
+            <div class="um-template-content">
+              <div class="um-template-title">XSAT - the geospatial visualization component</div>
+              <ul style="list-style: none;">
+                <li>Key components</li>
+                <ul style="font-size: 70%;">
+                  <li>COVID-19 Near Me</li>
+                  <li>Location of Emerging Clusters</li>
+                  <span style="margin-top: 13px;"><i>Global, regional and local scale</i></li>
+                </ul>
+                <li style="margin-top: 23px;">Previous work as building blocks</li>
+                <ul style="font-size: 70%;">
+                  <li><a href="https://land.ccs.miami.edu" target="_blank">https://land.ccs.miami.edu</a></li>
+                  <li><a href="https://map.ccs.miami.edu/housing/map" target="_blank">https://map.ccs.miami.edu/housing/map</a></li>
+                  <li><a href="https://mapeolasflores.ccs.miami.edu" target="_blank">https://mapeolasflores.ccs.miami.edu</a></li>
+                  <li><a href="https://healthtool.ccs.miami.edu" target="_blank">https://healthtool.ccs.miami.edu</a></li>
+                  <span style="margin-top: 13px;"><i>SOLR/Lucene, Postgres/PostGIS, Express, Angular, Leaflet, Node</i></li>
+                </ul>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation fragment" style="text-align: right;">re-invention of the wheel?
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * Data Sources
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Data Sources</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter">
+
+            <div class="um-template-content fragment" style="max-width: 90%; width: 90%;">
+              <div class="um-template-title">Pre-existing Work and Data Sources: Non-Government</div>
+              <ul style="font-size: 90%;">
+                <li style="margin-bottom: 13px;">Avi Schiffmann: <a href="https://ncov2019.live/data" target="_blank">https://ncov2019.live/data</a>
+                  <br><span style="font-size: 80%;">sources: "Local government websites/health departments" including CDC, COV19, and WHO.</span></li>
+                <li style="margin-bottom: 13px;">Johns Hopkins University: <a href="https://coronavirus.jhu.edu/map.html">https://coronavirus.jhu.edu/map.html</a>, <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">https://github.com/CSSEGISandData/COVID-19</a>, and <a href="https://www.arcgis.com/home/item.html?id=c0b356e20b30490c8b8b4c7bb9554e7c" target="_blank">https://www.arcgis.com/home/item.html?id=c0b356e20b30490c8b8b4c7bb9554e7c</a><br>
+                  <span style="font-size: 80%;">sources: WHO, ECDC, CDC, WorldOMeters, 1Point3Acres, Covid Tracking Project amongst others.</span></li>
+                <li style="margin-bottom: 13px;">New York Times: <a href="https://github.com/nytimes/covid-19-data" target="_blank">https://github.com/nytimes/covid-19-data</a><br>
+                  <span style="font-size: 80%;">sources: <i>none listed, but extensive methodology section.</i></span></li>
+                <li>1Point3Acres: <a href="https://coronavirus.1point3acres.com" target="_blank">https://coronavirus.1point3acres.com</a><br>
+                  <span style="font-size: 80%;">sources: <i>none listed, but brief explanation.</i></span></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * Data Sources
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Data Sources</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter">
+
+            <div class="um-template-content" style="max-width: 90%; width: 90%;">
+              <div class="um-template-title">New York Times</div>
+              <p style="font-size: 70%;">The data is the product of dozens of journalists working across several time zones to monitor news conferences, analyze data releases and seek clarification from public officials on how they categorize cases.</p>
+              <p style="font-size: 70%;">It is also a response to a fragmented American public health system in which overwhelmed public servants at the state, county and territorial level have sometimes struggled to report information accurately, consistently and speedily. On several occasions, officials have corrected information hours or days after first reporting it. At times, cases have disappeared from a local government database, or officials have moved a patient first identified in one state or county to another, often with no explanation. In those instances, which have become more common as the number of cases has grown, our team has made every effort to update the data to reflect the most current, accurate information while ensuring that every known case is counted.</p>
+              <p style="font-size: 70%;">When the information is available, we count patients where they are being treated, not necessarily where they live.</p>
+              <p style="font-size: 70%;">In most instances, the process of recording cases has been straightforward. But because of the patchwork of reporting methods for this data across more than 50 state and territorial governments and hundreds of local health departments, our journalists sometimes had to make difficult interpretations about how to count and record cases.</p>
+              <p style="font-size: 70%;">...</p>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation"><a href="https://github.com/nytimes/covid-19-data" target="_blank">https://github.com/nytimes/covid-19-data</a>
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * Data Sources
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Data Sources</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter">
+
+            <div class="um-template-content">
+              <div class="um-template-title">1Point3Acres</div>
+              <p>We manually aggregate data from official government websites and latest news reports. Our volunteers fact-check and de-dup all the updates to bring accurate information. All cases have links to credible sources. Note that data are being collected in real-time and are preliminary and subject to change as COVID-19 response continues.</p>
+              <p>The recovered number include both discharged and healed. According to CDC guideline, they may not be fully healed or recovered. Also the "cleared from quarantine" cases are not included in Recovery.</p>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation"><a href="https://coronavirus.1point3acres.com" target="_blank">https://coronavirus.1point3acres.com</a>
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * Data Sources
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Data Sources</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter">
+
+            <div class="um-template-content" style="max-width: 90%; width: 90%;">
+              <div class="um-template-title">Pre-existing Work and Data Sources: Government</div>
+              <ul style="font-size: 90%; line-height: 110%;">
+                <li style="margin-bottom: 13px;"f>Centers for Disease Control (CDC): <a href="https://www.cdc.gov/coronavirus/2019-ncov/" target="_blank">https://www.cdc.gov/coronavirus/2019-ncov/</a><br>
+                  <span style="font-size: 80%;">sources: hospital reporting, COVID-NET, testing laboratories, Outpatient Influenza-like Illness Surveillance Network (ILINet), amongst others.</span></li>
+                <li style="margin-bottom: 13px;">Florida Department of Health (FDOH): <a href="http://www.floridahealth.gov" target="_blank">http://www.floridahealth.gov/</a>
+                  <br><span style="font-size: 80%;">sources: self reporting from govt. admin. units and hospitals.</span><br>
+                  <ul style="font-size: 70%;">
+                    <li>Florida Case Line Data: <a href="https://open-fdoh.hub.arcgis.com/datasets/florida-covid19-case-line-data" target="_blank">https://open-fdoh.hub.arcgis.com/datasets/florida-covid19-case-line-data</a></li>
+                    <li>Florida Zip Codes: <a href="https://open-fdoh.hub.arcgis.com/datasets/florida-covid19-cases-by-zip-code" target="_blank">https://open-fdoh.hub.arcgis.com/datasets/florida-covid19-cases-by-zip-code</a></li>
+                    <li>ACHA Facilities (Florida): <a href="https://open-fdoh.hub.arcgis.com/datasets/acha-facilities-feb2020" target="_blank">https://open-fdoh.hub.arcgis.com/datasets/acha-facilities-feb2020</a></li>
+                  </ul>
+                </li>
+                <li style="margin-bottom: 13px;">Florida Agency for Health Care Administration (AHCA): <a href="https://ahca.myflorida.com">https://ahca.myflorida.com/</a><br>
+                  <span style="font-size: 80%;">sources: self reporting from hospitals and other care sites.</span></li>
+                <li>Florida Division of Emergency Management: <a href="https://www.floridadisaster.org/covid19/" target="_blank">https://www.floridadisaster.org/covid19/</a><br>
+                  <span style="font-size: 80%;">sources: self reported from care facilities.</span></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * Data Sources
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Data Sources</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter">
+
+            <div class="um-template-content" style="max-width: 90%; width: 90%;">
+              <div class="um-template-title">Some Key Observations ...</div>
+              <ul style="font-size: 90%; line-height: 110%;">
+                <li style="margin-bottom: 42px;"f>Covid data interpretation is a true test for data literacy<br>
+                  <span style="font-size: 80%;">observation: highlights need for merging information literacy and data literacy in teaching.</span></li>
+                <li style="margin-bottom: 13px;" class="fragment">Much GIS data shared on institutional ArcGIS for Server/Portal platform<br>
+                  <span style="font-size: 80%;">observation: highlights the industry position of ArcGIS for Server for GIS data publication.</span></li>
+                <li style="margin-bottom: 13px;" class="fragment">GitHub as a data sharing platform
+                  <br><span style="font-size: 80%;">observation: great way to publish data with versions across time.</span><br></li>
+                <li class="fragment">Both ArcGIS online and GitHub provide APIs to pull data programatically<br>
+                  <span style="font-size: 80%;">observation: relatively easy to script data updates to maintain a local repository for data.<br><br></span>
+                  <span style="background-color: #FF0; padding: 3px; line-height: 140%;" class="fragment"><i>Highlights the <b>need to provide robust services</b> and explicit training for <b>ArcGIS for Server/Portal and GitHub</b> as data publication platforms at UM.</i></span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">National Institute of Allergy and Infectious Diseases (NIAID) (2020). This scanning electron microscope image shows SARS-CoV-2 (round gold objects) emerging from the surface of cells cultured in the lab. SARS-CoV-2. The virus shown was isolated from a patient in the U.S. Wikimedia Commons.
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+       <div style="position: absolute; top: 120px; right: 30px;"><img src="common/assets/img/1263px-SARS-CoV-2_scanning_electron_microscope_image.jpg" style="max-width: 300px; border-radius: 7px;"></div>
+      </section>
+
+      <!-- ***
+            * Data Curation
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Data Curation</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter fragment" data-fragment-index=1>
+
+            <div class="um-template-content" style="max-width: 90%; width: 90%;">
+              <div class="um-template-title">Data Curation</div>
+              <div style="display: inline-block; width: 100%">
+                <div style="max-width: 40%; float: left;"><img src="common/assets/img/1187px-Novel_Coronavirus_SARS-CoV-2_(49640655138).jpg" style="max-width: 500px; border-radius: 7px;"></div>
+                <div style="max-width: 55%; float: right; margin-right: 120px;">
+                  <ul style="font-size: 90%; margin-top: 7px;">
+                    <li style="margin-bottom: 7px;">UM ArcGIS Online<br>
+                      <span style="font-size: 80%;">Principal copy of pre-existing data</span></li>
+                    <li style="margin-bottom: 7px;">Postgres/PostGIS<br>
+                      <span style="font-size: 80%;">Principal data store</span></li>
+                    <li style="margin-bottom: 7px;">SOLR/Lucene<br>
+                      <span style="font-size: 80%;">Principal data provider for web applications</span></li>
+                    <li style="margin-bottom: 7px;">PDF Scraping<br>
+                      <span style="font-size: 80%;">Some data only available as PDF</span></li>
+                    <li style="margin-bottom: 7px;">Archives<br>
+                      <span style="font-size: 80%;">Store historical data not stored elsewhere</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation fragment" data-fragment-index=1>National Institute of Allergy and Infectious Diseases (NIAID) (2020). Transmission electron micrograph of SARS-CoV-2 virus particles, isolated from a patient. Image captured and color-enhanced at the NIAID Integrated Research Facility (IRF) in Fort Detrick, Maryland. Wikimedia Commons.
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * Data Curation
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Data Curation</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter">
+
+            <div class="um-template-content" style="max-width: 90%; width: 90%;">
+              <div class="um-template-title">ESRI: ArcGIS for Server and ArcGIS Portal</div>
+              <ul style="font-size: 90%;">
+                <li style="margin-bottom: 13px;">Florida puts up first state run data portal with ESRI's platform<br>
+                  <span style="font-size: 80%;">- <a href="https://www.esri.com/about/newsroom/blog/scientist-maps-florida-covid19-cases/" target="_blank">COVID-19: Dedicated Scientist in Florida Made Quick Moves to Map the Disease</a><br>- <a href="https://www.npr.org/2020/06/29/884551391/florida-scientist-says-she-was-fired-for-not-manipulating-covid-19-data" target="_blank">Florida Scientist Says She Was Fired For Not Manipulating COVID-19 Data</a></span></li>
+                <li style="margin-bottom: 13px;">IDSC re-invents Map dashboard with ArcGIS Online<br>
+                  <span style="font-size: 80%;">- <a href="https://umiami.maps.arcgis.com/apps/opsdashboard/index.html#/fd629373dcbb4c6fa5f132cffec68919" target="_blank">UM IDSC Coronavirus Reporting and Tracking System</a><br>
+                  - Updated four times daily from JHU through Python script as cron job:<br></span>
+                  <div style="font-size: 80%; max-height: 210px; height: 210px; max-width: 100%; width: 100%; overflow-y: scroll; margin-top: 13px;"><code><pre style="width: 100%; margin: 0px; background-color: #eee; padding: 7px;">
+import datetime
+import requests
+import csv
+import json
+import base64
+from config import config
+import sys
+
+scripthome = 'postgres/' # '' in jupyter environment
+
+# get auth token for arcgis online (institutional account)
+url = 'https://www.arcgis.com/sharing/generateToken'
+params = {
+    'username': config.username, 
+    'password': config.password, 
+    'f':'json', 
+    'referer': 'https://www.arcgis.com/'
+}
+r = requests.post(url,params=params)
+response = json.loads(r.text)
+token = response['token']
+
+# get all data on ArcGIS online
+layer_url = 'https://services1.arcgis.com/B4MnusZHL3vmqU3t/arcgis/rest/services/CovidCounties/FeatureServer/' + \
+            'query?f=json&' + \
+            'layerDefs={"0":""}&' + \
+            'returnGeometry=false'
+r = requests.post(layer_url)
+arconline_data = json.loads(r.text)['layers'][0]['features']
+
+# get latest update from JHU
+base_data_url = 'https://api.github.com/repos/CSSEGISandData/COVID-19/contents/csse_covid_19_data/csse_covid_19_daily_reports/'
+daily_file = (datetime.date.today() - datetime.timedelta(days=1)).strftime("%m-%d-%Y") + '.csv'
+r = requests.get(base_data_url + daily_file)
+jhu_data = csv.DictReader(
+    base64.b64decode(
+        json.loads(r.text)['content']
+        .encode('utf-8')
+    )
+    .decode('utf-8')
+    .splitlines()
+)
+
+# create a set of lookup keys for the JHU data
+sorted = {}
+for line in jhu_data:
+    if line['FIPS'] != '':
+        sorted[line['FIPS']] = line
+
+# set up a simple update request
+layer_url = 'https://services1.arcgis.com/B4MnusZHL3vmqU3t/arcgis/rest/services/CovidCounties/FeatureServer/0/' + \
+            'updateFeatures?f=json&' + \
+            'token=' + token + '&' + \
+            'features='
+
+# set up some basic logging
+counters = {
+    'success': 0,
+    'notfound': 0,
+    'fail': 0
+}
+
+# stdout header for feedback
+print ('{:8}{:20}{:11}{:11}{:11}'.format('FIPS','name','success','not found','fail'))
+
+# merge the JHU data with the arcgis online features and send back to arcgis online
+for county in arconline_data:
+    if county['attributes']['FIPS'] in sorted:
+        jhu_update = sorted[county['attributes']['FIPS']]
+        county['attributes']['Confirmed'] = int(jhu_update['Confirmed'])
+        county['attributes']['Deaths'] = int(jhu_update['Deaths'])
+        county['attributes']['Last_Updat'] = jhu_update['Last_Update']
+        r = requests.post(layer_url+'['+json.dumps(county)+']')
+        if not json.loads(r.text)['updateResults'][0]['success']: 
+            counters['fail'] += 1
+        else:
+            counters['success'] += 1
+    else:
+        counters['notfound'] += 1
+        
+    # provide a little feedback
+    logline = '{:8}{:20}{:11}{:11}{:23}'.format(
+      county['attributes']['FIPS'],
+      county['attributes']['NAME'].encode('utf-8'),
+      str(counters['success']),
+      str(counters['notfound']),
+      str(counters['fail'])
+    )
+    sys.stdout.write (logline)
+    sys.stdout.flush()
+    sys.stdout.write ('\r')
+
+# write a line in the log file
+f = open(scripthome+"log/agolog.csv", "a")
+f.write("%s,%s,%s,%s\n" % (daily_file,str(counters['success']),str(counters['notfound']),str(counters['fail'])) )
+f.close()
+                </pre></code></div></li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+
+      <!-- ***
+            * Data Curation
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Data Curation</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter">
+
+            <div class="um-template-content" style="max-width: 90%; width: 90%;">
+              <div class="um-template-title">PostgreSQL and PostGIS</div>
+              <ul style="font-size: 90%;">
+                <li style="margin-bottom: 13px;">Open-source database platform that serves as data store (GIS capable)<br>
+                  <span style="font-size: 80%;">- Home for FDOH data</span><br>
+                  <span style="font-size: 80%;">- Updated four times daily from FDOH through Python script as cron job:<br></span>
+                  <div style="font-size: 80%; max-height: 270px; height: 270px; max-width: 100%; width: 100%; overflow-y: scroll; margin-top: 13px; margin-bottom: 13px;"><code><pre style="width: 100%; margin: 0px; background-color: #eee; padding: 7px;">
+import datetime
+import requests
+import csv
+import json
+import psycopg2
+# from config import local_db as db
+from config import feta_db as db
+
+scripthome = 'postgres/' # '' in jupyter environment
+
+##
+ # get all data from FloridaDOH open data hub and save postgres create scripts for 
+ # tables and the corresponding csv files, then update the postgres database
+ ##
+    
+# get postgres connection
+conn = psycopg2.connect(
+    host=db.host,
+    dbname=db.name,
+    user=db.user,
+    password=db.password
+)
+delimiter = '\t'
+    
+# local folders
+sql_prefix = '/data/fdoh_covid/sql/'
+data_prefix = '/data/fdoh_covid/csv/'
+
+# set up the series of layer apis to query
+service_url = 'https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/'
+json_url = 'https://opendata.arcgis.com/datasets/'
+feature_server = '/FeatureServer/0/'
+# NOTE: this query assumes all tables have field ObjectId
+query = 'query?f=json&outFields=*&returnGeometry=false&orderBy=ObjectId'
+layers = [
+    {
+        "name": "cases",
+        "service": 'Florida_COVID19_Case_Line_Data_NEW',
+        "json": '37abda537d17458bae6677b8ab75fcb9_0.geojson',
+        "name_index": 0 # actually the county as there is no name for each case
+    },
+    {
+        "name": "zip",
+        "service": 'Florida_Cases_Zips_COVID19',
+        "json": '09ec2e757f91411b8e12445805cf2809_0.geojson',
+        "name_index": 1
+    },
+    {
+        "name": "county_cases",
+        "service": 'Florida_COVID19_Cases',
+        "json": 'a7887f1940b34bf5a02c6f7f27a5cb2c_0.geojson',
+        "name_index": 3
+    },
+#    {
+#        "name": "county_surveillance",
+#        "service": 'Florida_Testing',
+#        "name_index": 3
+#    }    
+]
+
+# columns to ignore in all tables
+ignore = [
+    'OBJECTID_12_13',    # from county_cases and county_surveillance
+    'DATESTAMP',         # from county_cases and county_surveillance
+    'ShapeSTAre',        # from county_cases and county_surveillance
+    'ShapeSTLen',        # from county_cases and county_surveillance
+    'OBJECTID_1',        # from county_cases and county_surveillance
+    'County_1',          # from county_cases and county_surveillance
+    'OBJECTID_12',       # from county_cases and county_surveillance
+    'DEPCODE_1',         # from county_cases and county_surveillance
+    'Shape__Area',       # from county_cases and county_surveillance
+    'Shape__Length',     # from county_cases and county_surveillance
+    'FieldMatch',        # from zip
+    'ZIPX',              # from zip
+    'Places',            # from zip
+    'c_places'           # from zip
+]
+
+# columns with unusual values than need re-mapping
+nodata = { 
+    "cases": { 
+        "Age" : [ 
+            ("NA",-99) 
+        ] 
+    },
+    "zip": { 
+        "Cases_1" : [ 
+            ("<5",-99), 
+            ("SUPPRESSED",-999) 
+        ] 
+    },
+    "county_cases": {
+        "MedianAge": [
+            (None, -99)
+        ]
+    }
+}
+
+# write sql table create script
+def sql_create_table(layer,fields):
+    headers = []
+    f = open(sql_prefix+layer["filename"]+".sql", "w")
+    f.write(
+        '-- Table: public.cases\n\n' + \
+        '-- DROP TABLE public.cases;\n\n' + \
+        'CREATE TABLE public.' + layer["name"] + '\n' + \
+        '(\n'
+    )
+    for field in fields:
+        if field['name'] in ignore:
+            continue
+        headers.append({"name": field['name'], "type": field['type']})
+        if field['name'] == layer['pkey']:
+            f.write('    ' + field['name'] + ' integer NOT NULL,\n')
+            constraint = '    CONSTRAINT ' + layer["name"] + '_pkey PRIMARY KEY (' + field['name'] + ')\n'
+            headers[-1]['type'] = 'esriFieldTypeInteger'
+            #if layer['name'] != 'cases':
+            #    headers[-1]['name'] = 'FID'
+        elif field['type']=='esriFieldTypeDate':
+            f.write('    ' + field['name'] + ' timestamp(0) without time zone,\n')
+        elif field['type']=='esriFieldTypeInteger' or field['name'] in integers:
+            headers[-1]['type'] = 'esriFieldTypeInteger'
+            f.write('    ' + field['name'] + ' integer,\n')
+        else:
+            f.write('    ' + field['name'] + ' varchar(120) COLLATE pg_catalog."default",\n') # perhaps dynamic length?
+    f.write(
+        constraint + \
+        ')\n' + \
+        'WITH (\n' + \
+        '    OIDS = FALSE\n' + \
+        ')\n' + \
+        'TABLESPACE pg_default;\n\n' + \
+        'ALTER TABLE public.' + layer["name"] + '\n' + \
+        '    OWNER to ' + db.user + ';\n'
+    )
+    f.close()
+    
+    return headers
+
+# step through layers and process data from APIs
+log = []
+for layer in layers:
+    base_layer_url = service_url + layer['service'] + feature_server + query
+    query_url = base_layer_url + '&where=1=1'
+    linecount = 2000 # max records returned by API
+    retrieved = 0
+    delimiter = '\t'
+
+    # make first request and get first data page
+    r = requests.post(query_url)
+    response_json = json.loads(r.text)
+
+    # get primary key field information
+    layer['pkey'] = response_json['objectIdFieldName']
+    
+    # create a datestamp
+    datestamp = datetime.datetime.today().strftime("%Y-%m-%d-%H%M%S")
+    layer['filename'] = datestamp + layer['name']
+            
+    # create sql table and get corresponding headers
+    integers = ['Age','Cases_1'] # Age in line data, Cases_1 in zip data
+    headers = sql_create_table(layer,response_json['fields'])
+    
+    # open csv file and write headers
+    f = open(data_prefix+layer['filename']+".csv", "w")
+    #for header in headers[:-1]:
+    #    f.write(header['name']+",")
+    #f.write(headers[-1]['name']+"\n")
+
+    # step through the data pages and write to the csv file
+    # NOTE: this used to work, but now there is a limit to API calls
+    # re-instated and functioning correctly on 06-25-2020
+    while linecount==2000:
+        for line in response_json['features']:
+            for i, header in enumerate(headers):
+                # transform dates to postgres format
+                if header['type'] == 'esriFieldTypeDate':
+                    line['attributes'][header['name']] = datetime.datetime.strftime(
+                        datetime.datetime.fromtimestamp(int(line['attributes'][header['name']]/1000)),
+                        '%Y-%m-%d %H:%m:%S-00'
+                    )
+                # take care of anomalous notdata values
+                if layer['name'] in nodata:
+                    if header['name'] in nodata[layer['name']]:
+                        for val in nodata[layer['name']][header['name']]:
+                            if line['attributes'][header['name']] == val[0]:
+                                line['attributes'][header['name']] = val[1]
+                # write thte value to the csv
+                f.write(str(line['attributes'][header['name']]))
+                # write delimiter or newline
+                if i < len(headers) - 1:
+                    f.write(delimiter)
+                else:
+                    f.write("\n")
+        linecount = len(response_json['features'])
+        retrieved = response_json['features'][-1]['attributes'][layer['pkey']]
+        query_url = base_layer_url + '&where=' + layer['pkey'] + '>' + str(retrieved)
+        r = requests.post(query_url)
+        response_json = json.loads(r.text)
+
+    # close the csv file
+    f.close()
+    
+    # create log line
+    log.append({
+        'name': layer['filename'],
+        'sql': sql_prefix+layer["filename"]+".sql",
+        'csv': data_prefix+layer['filename']+".csv",
+    })
+    
+    # recreate tables and populate with data
+    with conn:
+        
+        # drop table
+        cur = conn.cursor()
+        sql = "drop table " + layer['name'] + ";"
+        try:
+            cur.execute(sql,)
+            log[-1]['drop'] = ' success'
+        except:
+            log[-1]['drop'] = ' table does not exist in postgres'
+            conn.rollback()
+        cur.close()
+        conn.commit()
+
+        # create table
+        cur = conn.cursor()
+        f = open(sql_prefix+layer["filename"]+".sql", "r")
+        sql = ''
+        for line in f:
+            if '--' in line or len(line) == 0:
+                continue
+            sql = sql + line
+            if ';' in line:
+                try:
+                    cur.execute(sql,)
+                    log[-1]['create'] = ' success'
+                except:
+                    log[-1]['create'] = 'FAILED'
+                    conn.rollback()
+                sql = ''
+        cur.close()
+        conn.commit()
+        
+        # load data from csv
+        cur = conn.cursor()
+        f = open(data_prefix+layer["filename"]+".csv", "r")
+        try:
+            cur.copy_from(f, layer['name'], sep=delimiter)
+            log[-1]['load'] = ' success'
+        except:
+            log[-1]['load'] = ' FAILED'
+            conn.rollback()
+        f.close()
+        cur.close()
+        conn.commit()
+        
+conn.close()
+
+f = open(scripthome+"log/pglog.csv", "a")
+for layer in log:
+    f.write("%s,%s,%s,%s,%s,%s\n" % (
+        layer['name'],
+        layer['sql'],
+        layer['csv'],
+        layer['drop'],
+        layer['create'],
+        layer['load']
+    ))
+f.close()
+                </pre></code></div>
+                <span style="font-size: 80%; margin-top: 13px;">- More complex script as data structure varies (FDOH makes occasional changes)<br></span>
+                <span style="font-size: 80%;">- After update all data is imported into SOLR and indexed<br></span>
+              </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * Data Curation
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Data Curation</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter">
+
+            <div class="um-template-content" style="max-width: 90%; width: 90%;">
+              <div class="um-template-title">SOLR/Lucene</div>
+              <div style="display: inline-block; width: 100%">
+                <div style="max-width: 40%; float: left;"><img src="common/assets/img/1280px-Novel_Coronavirus_SARS-CoV-2.jpg" style="max-width: 500px; border-radius: 7px;"></div>
+                <div style="max-width: 55%; float: right; margin-right: 120px;">
+                  <ul style="font-size: 90%; margin-top: 67px;">
+                    <li style="margin-bottom: 7px;">Principal data provider for web applications<br>
+                      <span style="font-size: 80%;">- Very fast for filtered data queries</span><br>
+                      <span style="font-size: 80%;">- Good ingestion of metadata</span><br>
+                      <span style="font-size: 80%;">- Needs special attention to construction of index</span><br>
+                      <span style="font-size: 80%;">- Geospatial filter capable</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">National Institute of Allergy and Infectious Diseases (NIAID) (2020). This transmission electron microscope image shows SARS-CoV-2—also shows virus particles emerging from the surface of cells cultured in the lab. The spikes on the outer edge of the virus particles give coronaviruses their name, crown-like. Wikimedia Commons
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * Data Curation
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Data Curation</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter">
+
+            <div class="um-template-content" style="max-width: 90%; width: 90%;">
+              <div class="um-template-title">Archiving Spatio-temporal Data</div>
+              <div style="display: inline-block; width: 100%">
+                <div style="max-width: 40%; float: right;"><img src="common/assets/img/southFloridaZip.jpg" style="max-width: 500px; border-radius: 7px;"></div>
+                <div style="max-width: 50%; float: left; margin-right: 40px;">
+                  <ul style="font-size: 90%; margin-top: 17px;">
+                    <li style="margin-bottom: 7px;">All update scripts store snapshots of data and snapshots of metadata that describe data structure<br>
+                      <span style="font-size: 80%;">- Currently stored as raw text</span><br>
+                      <span style="font-size: 80%;">- Very quickly accumulates; already 12G to date</span><br>
+                      <span style="font-size: 80%;">- Not stored elsewhere (to our knowledge)</span><br>
+                      <span style="font-size: 80%;">- Provides insights not available with other tools</span><br>
+                      <span style="font-size: 80%;">- e.g. historical zip code data</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">Data: FDOH, Image: XSAT
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * Data Curation
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Data Curation</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter">
+
+            <div class="um-template-content" style="max-width: 100%; width: 100%;">
+              <div class="um-template-title">Scraping PDFs</div>
+              <div style="display: inline-block; width: 100%">
+                <div style="max-width: 55%; float: left;"><img src="common/assets/img/countyPDF.jpg" style="max-width: 700px; border-radius: 7px;"></div>
+                <div style="max-width: 42%; float: right; margin-right: 20px;">
+                  <ul style="font-size: 90%; margin-top: 67px;">
+                    <li style="margin-bottom: 7px;">Much data from government agencies is provided in daily reports as PDFs<br>
+                      <span style="font-size: 80%;">- e.g. Florida race and ethnicity data by county</span><br>
+                      <span style="font-size: 80%;">- PDF format changes through time</span><br>
+                      <span style="font-size: 80%;">- Notoriously difficult to extract data from PDFs</span><br>
+                      <span style="font-size: 80%;">- Highlights human labor in curation</span><br>
+                      <span style="font-size: 80%;">- Still a work in progress for IDSC</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation"><a href="http://ww11.doh.state.fl.us/comm/_partners/covid19_report_archive/county_reports_20200504_0946.pdf" target="_blank">http://ww11.doh.state.fl.us/comm/_partners/covid19_report_archive/county_reports_20200504_0946.pdf</a>
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * Stories
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Stories to Tell</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter">
+
+            <div class="um-template-content" style="max-width: 100%; width: 100%;">
+              <div class="um-template-title"><a href="https://xsat.idsc.miami.edu" target="_blank" style="font-size: 300%; margin-top: 130px;">XSAT</a></div>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">Tsinoremas, N., Mader C., Norris, T., Perez, J., Dhabe, S., Venkatapuram, S. (2020). <i>eXperimantal Situation Awareness Tool</i>. <a href="https://xsat.idsc.miami.edu/" target="_blank">https://xsat.idsc.miami.edu/</a>
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * Ways Forward
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Application and Ways Forward</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%;">
+              <div class="um-template-title">Lessons Learned and Food for Thought</div>
+              <div style="display: inline-block; width: 100%">
+                <ul style="font-size: 90%;">
+                  <li style="margin-bottom: 7px;" class="fragment">Social media component and self-reporting app still in development<br>
+                  <span style="font-size: 80%;">Some very interesting preliminary results for predicting hotspots based on words found in tweets, but all in retrospect.</span></li>
+                  <li style="margin-bottom: 7px;" class="fragment">Data Sharing and Data Publication enters public view and interest is apparent!<br>
+                  <span style="font-size: 80%;">Great tools exist; UM should develop more robust services.</span></li>
+                  <li style="margin-bottom: 23px;" class="fragment">Storytelling and Data Curation go together, much like curation in museums.<br>
+                  <span style="font-size: 80%;">Similar to other projects like Pulley Ridge experience (Norris and Mader 2019, in further reading, last slide).</span></li>
+                  <li style="margin-bottom: 7px;" class="fragment">Data does not tell stories, humans tell stories with data.<br>
+                  <span style="font-size: 80%;">Extreme care should be taken with curation of data. It is the stories we tell as scientists, reporters, and other interested parties that shape societal reaction.</span></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * PPC Dade County Complete
+            * -->
+      <section data-transition="fade">
+        <img src="common/assets/img/PPC_dade_complete.jpg" style="max-width: 1100px; margin-top: -100px;"> 
+        <div class="um-template-citation" style="margin-top: -60px !important;">
+          <ul style="list-style: none;">
+            <li>Williams, R., Odum, G., Bursac, Z., Trepka, M.J., Veledar, E., Saxena A., Gidel, L.T, & Norris, T.B. (2020). <i>MDC COVID-19 Projections</i>, <a href="https://rwilli5.github.io/MiamiCovidProject/" target="_blank">https://rwilli5.github.io/MiamiCovidProject/</a>  Last Accessed 08/10/2020</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ***
+            *  Thanks
+            * -->
+      <section>
+        <div style="position: absolute; right: -500px; top: -200px;">
+          <img src="common/assets/img/SARS-CoV-2_without_background.png" style="max-width: 900px;">
+        </div>
+        <div style="margin-left: 120px !important; margin-top: 120px; font-size: 80%; text-align: left;">
+          <div class="um-template-title" style="text-align: left !important;">Thanks!</div>
+          <div style="font-size: 90%">
+            Timothy B Norris<br>
+            <a href="mailto:tnorris@miami.edu" style="color: black !important; text-decoration: underline">tnorris@miami.edu</a>
+          </div>
+          <div class="um-template-title" style="text-align: left !important; margin-top: 72px;">Team Acknowledgments</div>
+          <div style="font-size: 70%">
+            <b>Nicholas Tsinoremas</b>, PhD, Vice Provost for Research Computing and Data<br><span style="margin-left: 225px;">Director, Institute of Data Science and Computing (IDSC)</span><br>
+            <b>Christopher Mader</b>, Director, Software Engineering Group (IDSC-SWENG)<br>
+            <b>Joel Zysman</b>, Director, Center For Computer Science (IDSC-CCS)<br>
+            <b>Julio Perez</b>, Senior Software Engineer (IDSC-SWENG)<br>
+            <b>Sreeharsha Venkatapuram</b>, Senior Software Engineer (IDSC-SWENG)<br>
+            <b>Shivani Dhabe</b>, Software Engineer (IDSC-SWENG)<br>
+            <b>Shejia Geng</b>, Research Assistant (IDSC-CCS)<br>
+            <b>Pedro Davilla</b>, System Administrator (IDSC-CCS)
+          </div>
+        </div>
+      </section>
+
+      <!-- ***
+            *  Reading List
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>XSAT Covid Resources</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-title" style="margin-bottom: 23px; flex: none;margin-top: 13px;">Further Reading</div>
+          <div class="um-template-content-containter" style="overflow-y: scroll; overlow-x: hidden; margin-bottom: 42px;">
+
+            <div style="max-width: 75%; margin: 0px auto 0px auto !important; max-width: 90%; font-size: 55%; line-height: 130%">
+              <ul>
+                <li>Gohil, S., Vuik, S., & Darzi, A. (2018). Sentiment analysis of health care tweets: review of the meth-ods used. <i>JMIR public health and surveillance</i>, 4(2), e43. <a href="https://doi.org/10.2196/publichealth.5789" target="_blank">https://doi.org/10.2196/publichealth.5789</a>.</li>
+                <li>Norris T., & Mader C. (2019). Data Curation for Big Interdisciplinary Science: The Pulley Ridge Experience. <i>Journal of eScience Librarianship</i> 8(2):  e1172. <a href="https://doi.org/10.7191/jeslib.2019.1172" target="_blank">https://doi.org/10.7191/jeslib.2019.1172</a>.</li>
+                <li>Rose S.W., Jo, C.L., Binns S., Buenger M., Emery S., Ribisl K.M., (2017). Perceptions of Menthol Cigarettes Among Twitter Users: Content and Sentiment Analysis. <i>J Med Internet Res.</i> 2017 Feb 27; 19(2): e56. <a href="https://doi.org/10.2196/jmir.5694" target="_blank">https://doi.org/10.2196/jmir.5694</a>.</li>
+                <li>Tsinoremas, N., Mader C., Norris, T., Perez, J., Dhabe, S., Venkatapuram, S. (2020). <i>eXperimantal Situation Awareness Tool</i>. <a href="https://xsat.idsc.miami.edu/" target="_blank">https://xsat.idsc.miami.edu/</a>.
+                <li>Williams, R., Odum, G., Bursac, Z., Trepka, M.J., Veledar, E., Saxena A., Gidel, L.T, & Norris, T.B. (2020). <i>MDC COVID-19 Projections</i>, <a href="https://rwilli5.github.io/MiamiCovidProject/" target="_blank">https://rwilli5.github.io/MiamiCovidProject/</a>.</li>
+                <li>Zunic, A., Corcoran P., Spasic I. (2020). Sentiment Analysis in Health and Well-Being: Systematic Review. <i>JMIR Med Inform.</i> 2020 Jan 28; 8(1): e16023. <a href="https://doi.org/10.2196/16023" target="_blank">https://doi.org/10.2196/16023</a>.</li>
+              </ul>
+            </div>
+
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+    </div>
+  </div>
+  <script src="common/java/reveal.js"></script>
+	<script src="common/java/notes.js"></script>
+  <script src="common/java/head.min.js"></script>
+  <script>
+    Reveal.initialize({
+        width: 1366, height: 768, margin: 0.05,
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        mouseWheel: false,
+        chart: {
+          defaults: { 
+            global: { 
+              defaultFontSize: 20,
+              title: { fontColor: "#333" }, 
+              legend: {
+                position: "top",
+                labels: { fontColor: "#333" },
+              },
+              tooltips: {
+                labels: { fontColor: "#333" },
+              },
+            }, 
+            scale: { 
+              scaleLabel: { fontColor: "#333" }, 
+              gridLines: { color: "#333", zeroLineColor: "#333" }, 
+              ticks: { fontColor: "#333" }, 
+            } 
+          },
+        },
+        dependencies: [
+            { src: 'common/java/Chart.min.js' },
+            { src: 'common/java/csv2chart.js' }
+        ] 
+    });
+  </script>
+</body>
+</html>
