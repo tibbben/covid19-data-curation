@@ -1,8 +1,10 @@
-# data science
+# covid19 data curation
 
-This repository contains a presentation about emerging themes in data science.
+This repository contains a presentation that covers some of the data curation aspects for the University of Miami Institute for Data Science and Computing eXperimental Situational Awareness Tool created with the resources from the COVID-19 Rapid Response Grant awarded to Nicholas Tsinoremas, UM Vice Provost of Research Computing and Data, and Director of IDSC.  
 
-For the actual presentation, plesae see the [hosted version](https://tibbben.github.io/data-science).
+NOTE: The opinions expressed in this publication are those of the author. They do not purport to reflect the opinions or views IDSC or its members.  
+
+For the actual presentation, please see the [hosted version](https://tibbben.github.io/covid19-data-curation).  
 
 ---
 
@@ -27,3 +29,14 @@ Please see the full license terms here: https://creativecommons.org/licenses/by/
 
 Timothy Norris, PhD
 tnorris@miami.edu
+
+Nicholas Tsinoremas, PhD, Vice Provost for Research Computing and Data
+Director, Institute of Data Science and Computing (IDSC)
+Christopher Mader, Director, Software Engineering Group (IDSC-SWENG)
+Joel Zysman, Director, Center For Computer Science (IDSC-CCS)
+Julio Perez, Senior Software Engineer (IDSC-SWENG)
+Sreeharsha Venkatapuram, Senior Software Engineer (IDSC-SWENG)
+Shivani Dhabe, Software Engineer (IDSC-SWENG)
+Shejia Geng, Research Assistant (IDSC-CCS)
+Pedro Davilla, System Administrator (IDSC-CCS)
+Michael Mannino, PhD, Director of Programs (IDSC)
